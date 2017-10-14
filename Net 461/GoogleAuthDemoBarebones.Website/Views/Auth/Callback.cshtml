@@ -1,0 +1,19 @@
+﻿@model Microsoft.AspNet.Identity.Owin.ExternalLoginInfo
+
+@{
+    ViewBag.Title = "Callback";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Callback</h2>
+
+<p>Email Address: @Model.Email</p>
+
+<p>Claims:</p>
+
+<ul>
+    @foreach (var claim in Model.ExternalIdentity.Claims)
+    {
+        <li>@claim.Type: @claim.Value</li>
+    }
+</ul>
