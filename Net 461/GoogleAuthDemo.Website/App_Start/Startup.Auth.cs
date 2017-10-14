@@ -58,11 +58,11 @@ namespace GoogleAuthDemo.Website
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+                {
+                    ClientId = "<ENTER YOUR CLIENT KEY",
+                    ClientSecret = "<ENTER YOUR CLIENT SECRET>"
+                });
         }
     }
 }
